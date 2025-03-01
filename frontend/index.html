@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Motocicletas</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Fuente de Google Fonts para un diseño más moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Motocicletas Disponibles</h1>
-    <ul id="motocicletas-list">
-        <!-- Las motocicletas se cargarán aquí dinámicamente -->
-    </ul>
+    <header>
+        <h1>Venta de Motocicletas</h1>
+        <p>Encuentra las mejores motocicletas al mejor precio.</p>
+    </header>
+
+    <main>
+        <section id="filtros">
+            <input type="text" id="buscar" placeholder="Buscar motocicletas...">
+            <button id="btn-buscar">Buscar</button>
+        </section>
+
+        <section id="lista-motocicletas">
+            <!-- Las motocicletas se cargarán aquí dinámicamente -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Venta de Motocicletas. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
