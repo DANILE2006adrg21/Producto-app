@@ -5,12 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Datos de ejemplo (simulando una API)
     const motocicletas = [
-        { nombre: 'Honda CBR 600', precio: '$15,000', imagen: 'https://via.placeholder.com/300' },
-        { nombre: 'Yamaha R6', precio: '$14,500', imagen: 'https://via.placeholder.com/300' },
-        { nombre: 'Kawasaki Ninja 400', precio: '$10,000', imagen: 'https://via.placeholder.com/300' },
         { nombre: 'Ducati Panigale V4', precio: '$25,000', imagen: 'https://via.placeholder.com/300' },
-        { nombre: 'Suzuki GSX-R750', precio: '$12,000', imagen: 'https://via.placeholder.com/300' },
-        { nombre: 'BMW S1000RR', precio: '$18,000', imagen: 'https://via.placeholder.com/300' }
+        { nombre: 'Aprilia RSV4', precio: '$22,000', imagen: 'https://via.placeholder.com/300' },
+        { nombre: 'MV Agusta F4', precio: '$30,000', imagen: 'https://via.placeholder.com/300' },
+        { nombre: 'Moto Guzzi V7', precio: '$10,000', imagen: 'https://via.placeholder.com/300' },
+        { nombre: 'Benelli TNT 600', precio: '$8,000', imagen: 'https://via.placeholder.com/300' },
+        { nombre: 'Bimota Tesi H2', precio: '$50,000', imagen: 'https://via.placeholder.com/300' }
     ];
 
     // Función para mostrar las motocicletas
@@ -26,6 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>Descripción breve de la motocicleta.</p>
             `;
             listaMotocicletas.appendChild(div);
+        });
+
+        // Animación de entrada
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.motocicleta').forEach(motocicleta => {
+            observer.observe(motocicleta);
         });
     }
 
