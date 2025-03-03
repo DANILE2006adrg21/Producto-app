@@ -13,9 +13,9 @@ Este es un proyecto de práctica que simula una página web para la venta de mot
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/DANILE2006adrg21/danile-app.git
+   git clone https://github.com/DANILE2006adrg21/Producto-app.git
 
-cd danile-app
+cd Producto-app
 
 cd backend
 npm install
