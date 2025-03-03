@@ -1,4 +1,4 @@
-# Venta de Motocicletas - danile-app
+# Venta de Motocicletas - Producto-app
 
 Este es un proyecto de práctica que simula una página web para la venta de motocicletas. La aplicación incluye:
 - Un **frontend** interactivo donde los usuarios pueden ver una lista de motocicletas disponibles.
